@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:id="@+id/ll_rating">
+        <com.marginfresh.Fonts.LatoRegularTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6.8"
+            android:textColor="@color/black"
+            android:gravity="center|left"
+            android:textSize="16sp"
+            android:id="@+id/tv_raterName"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:src="@drawable/rating0"
+            android:id="@+id/iv_rating"/>
+    </LinearLayout>
+
+    <com.marginfresh.Fonts.LatoRegularTextView
+        android:id="@+id/tv_review"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:text="Quality is Good"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <dimen name="val_5dp">5dp</dimen>
+    <dimen name="val_4dp">4dp</dimen>
+    <dimen name="val_10dp">10dp</dimen>
+    <dimen name="val_17dp">17dp</dimen>
+    <dimen name="val_25dp">25dp</dimen>
+    <dimen name="val_30dp">30dp</dimen>
+
+    <!-- font size in sp-->
+    <dimen name="val_14sp">14sp</dimen>
+    <dimen name="val_15sp">15sp</dimen>
+    <dimen name="val_12sp">12sp</dimen>
+    <dimen name="val_7dp">7dp</dimen>
+
+    <dimen name="margin2">2dp</dimen>
+    <dimen name="margin5">5dp</dimen>
+    <dimen name="margin8">8dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="margin15">15dp</dimen>
+    <dimen name="margin20">20dp</dimen>
+    <dimen name="margin25">25dp</dimen>
+    <dimen name="margin30">30dp</dimen>
+    <dimen name="margin35">35dp</dimen>
+
+
+    <dimen name="textsize20">20sp</dimen>
+    <dimen name="textsize18">18sp</dimen>
+    <dimen name="textsize14">14sp</dimen>
+    <dimen name="textsize15">15sp</dimen>
+    <dimen name="textsize16">16sp</dimen>
+    <dimen name="textsize22">22sp</dimen>
+    <dimen name="textsize24">24sp</dimen>
+    <dimen name="textsize32">32sp</dimen>
+
+
+    <dimen name="textsizemenu">15sp</dimen>
+
+    <dimen name="nav_drawer_width">260dp</dimen>
+    <dimen name="cartCountSize">10sp</dimen>
+</resources>

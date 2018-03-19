@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:paddingLeft="10dp">
+
+                        <com.marginfresh.Fonts.LatoRegularTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8.5"
+                            android:layout_gravity="center"
+                            android:text="My Account"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <com.marginfresh.Fonts.LatoRegularTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:text="Edit"
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/tv_editProfile"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3.5"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:weightSum="10">
+
+                        <com.marginfresh.Fonts.LatoRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="5"
+                            android:text="Name"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginBottom="5dp"/>
+
+                        <com.marginfresh.Fonts.LatoRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="5"
+                            android:text="Customer Name"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:id="@+id/tv_customerName"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3.5"
+                        android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="5"
+                        android:padding="10dp">
+
+                        <com.marginfresh.Fonts.LatoRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Contact No."
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginBottom="5dp"/>
+                        <com.marginfresh.Fonts.LatoRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+01 123456789"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:id="@+id/tv_customerContact"/>
+
+                    </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="5"
+                            android:padding="10dp">
+
+                            <com.marginfresh.Fonts.LatoRegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Email ID"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="@color/colorPrimary" />
+                            <com.marginfresh.Fonts.LatoRegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="abc@gmail.com"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:id="@+id/tv_customerEmail"
+                                android:singleLine="true"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_myaddress"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:id="@+id/ll_myAddress">
+
+                <com.marginfresh.Fonts.LatoRegularTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="8.8"
+                    android:padding="10dp"
+                    android:text="My Address"
+                    android:textStyle="bold"
+                    android:gravity="center|left"
+                    android:textColor="@color/black"/>
+
+                 <ImageView
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:src="@drawable/next_arrow"
+                     android:background="@color/white"
+                     android:padding="5dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_changeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:id="@+id/ll_changePassword">
+
+                    <com.marginfresh.Fonts.LatoRegularTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="8.8"
+                        android:padding="10dp"
+                        android:text="Change Password"
+                        android:textStyle="bold"
+                        android:gravity="center|left"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/next_arrow"
+                        android:background="@color/white"
+                        android:padding="5dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:id="@+id/tv_space"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_inviteFriends"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:id="@+id/ll_referFriend">
+
+                    <com.marginfresh.Fonts.LatoRegularTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="8.8"
+                        android:padding="10dp"
+                        android:text="Invite Friend"
+                        android:textStyle="bold"
+                        android:gravity="center|left"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/next_arrow"
+                        android:background="@color/white"
+                        android:padding="5dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/cv_faq">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <com.marginfresh.Fonts.LatoRegularTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="8.8"
+                        android:padding="10dp"
+                        android:text="FAQ"
+                        android:textStyle="bold"
+                        android:gravity="center|left"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/next_arrow"
+                        android:padding="5dp"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_grey"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
+        <com.marginfresh.Fonts.LatoBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Logout"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:id="@+id/tv_logout"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:src="@drawable/logout"
+            android:padding="5dp"/>
+    </LinearLayout>-->
+</LinearLayout>

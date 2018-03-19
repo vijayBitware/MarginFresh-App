@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Margin Fresh</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="email_id">Email Id</string>
+    <string name="contact_no">Contact No</string>
+    <string name="locality">Locality/Street Name</string>
+    <string name="building_street">Building no. / Street Name</string>
+    <string name="password">Password</string>
+    <string name="password_login">Password Login</string>
+    <string name="register">Register</string>
+    <string name="registration">Registration</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="how_works">How It Works?</string>
+    <string name="select_stores">Select Your Stores</string>
+    <string name="error_network_timeout">Network Error</string>
+    <string name="not_account">Don\'t have an account?</string>
+    <string name="have_account">Do you have an account?</string>
+    <string name="err_msg_contact">Enter your valid mobile number</string>
+    <string name="err_msg_contact_10_dig">Enter your valid 10 digit mobile number</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_how_it_works">HowItWorksActivity</string>
+
+    <string name="google_places_key">AIzaSyChtNIRHrUqnc3iddYGwxquCEGSHU4gLAg</string>
+
+    <string name="pleaseSelectStore">Please Select Your Store</string>
+    <string name="more_stores">More Stores</string>
+    <string name="skipStore">Skip Stores</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_Home">Home</string>
+    <string name="nav_Stores">Stores</string>
+    <string name="nav_Budget">Budget</string>
+    <string name="nav_Wallet">Wallet</string>
+    <string name="nav_MyOrders">My Orders</string>
+    <string name="nav_MyWishlist">My Wishlist</string>
+    <string name="nav_ContactUs">Contact Us</string>
+    <string name="nav_livechat">Chat With Us</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_logout">Log Out</string>
+
+    <string-array name="navDrawerItems">
+        <item>@string/nav_Home</item>
+        <item>@string/nav_Stores</item>
+        <item>@string/nav_Budget</item>
+        <item>@string/nav_Wallet</item>
+        <item>@string/nav_MyOrders</item>
+        <item>@string/nav_MyWishlist</item>
+        <item>@string/nav_ContactUs</item>
+        <item>@string/nav_livechat</item>
+        <item>@string/nav_settings</item>
+        <item>@string/nav_logout</item>
+    </string-array>
+
+
+    <string name="rating">Rate \&amp; Reviews</string>
+
+    <string name="my_address">Please complete your profile information to place your order</string>
+    <string name="payment_address">123 Main st, Oriando, North Corolina, 27560, United States</string>
+    <string name="no_internet">Please Check Your Internet Connection</string>
+    <string name="GPSAlertDialogTitle">GPS is setting</string>
+    <string name="GPSAlertDialogMessage">GPS is not enabled. Do you want to go to setting menu</string>
+    <string name="facebook_app_id">624794791042623</string>
+    <string name="network_error">Network Error</string>
+    <string name="empty_string">Please Enter Product To Search</string>
+
+    <string name="zendesk_account_key">56wJK0L1IThkOwqVxGfVlId9JnqaYxw2</string>
+
+</resources>

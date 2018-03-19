@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="165dp"
+    android:id="@+id/ll_topOffersTitleBar">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+        <com.marginfresh.Fonts.LatoRegularTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7.2"
+            android:text="Top Offers"
+            android:textSize="20sp"
+            android:gravity="center|left"
+            android:textColor="@color/black"/>
+        <com.marginfresh.Fonts.LatoRegularTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:text="View More"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:id="@+id/tv_viewMore"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:id="@+id/rv_topOffers"
+        android:background="@color/white">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

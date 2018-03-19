@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.9"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/ivNavDrawer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:padding="3dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+        </LinearLayout>
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5"/>
+        <com.marginfresh.Fonts.LatoRegularTextView
+       android:id="@+id/title"
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:layout_weight="7"
+       android:textSize="18dp"
+       android:textColor="@color/black"
+       android:text="abc"
+       android:gravity="center|left"
+       />
+    </LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.5" android:background="@color/black_light"/>
+
+
+</LinearLayout>

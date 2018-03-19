@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="@color/white">
+            <com.marginfresh.Fonts.LatoRegularTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:text="Ethenic Food"
+                android:gravity="center|left"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:paddingLeft="5dp"
+                android:id="@+id/tv_categoryName"/>
+            <com.marginfresh.Fonts.LatoRegularTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:text="View More"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/tv_viewAll" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:id="@+id/rv_foodCategory"
+            android:background="@color/white"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>

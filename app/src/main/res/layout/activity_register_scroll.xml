@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin20">
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/logo"
+                    />
+
+            </LinearLayout>
+
+            <com.marginfresh.Fonts.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registration"
+                android:textSize="@dimen/textsize32"
+                android:textColor="@color/black"
+                />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tv_firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/val_10dp" >
+                <com.marginfresh.Fonts.LatoMediunItalicEdit
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name"
+                    android:textSize="@dimen/textsize16"
+                    android:id="@+id/edit_firstName"
+                    android:textStyle="italic"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tv_lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.marginfresh.Fonts.LatoMediunItalicEdit
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last Name"
+                    android:textSize="@dimen/textsize16"
+                    android:id="@+id/edit_lastName"
+                    android:textStyle="italic"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_input_phone1">
+                <com.marginfresh.Fonts.LatoMediunItalicEdit
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize16"
+                    android:id="@+id/edit_phone1"
+                    android:maxLines="1"
+                    android:textStyle="italic"
+                    android:inputType="number"
+                    android:hint="@string/contact_no"
+                    android:singleLine="true"
+                    android:maxLength="12"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_input_email_reg_first"
+                >
+                <com.marginfresh.Fonts.LatoMediunItalicEdit
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize16"
+                    android:id="@+id/edit_registeremail"
+                    android:textStyle="italic"
+                    android:singleLine="true"
+                    android:hint="@string/email_id"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_input_password"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/text_grey">
+                <com.marginfresh.Fonts.LatoMediunItalicEdit
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:textStyle="italic"
+                    android:maxLines="1"
+                    android:textSize="@dimen/textsize16"
+                    android:id="@+id/edit_registerpass"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_referalcode">
+                <com.marginfresh.Fonts.LatoMediunItalicEdit
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Referral Code"
+                    android:textStyle="italic"
+                    android:maxLines="1"
+                    android:textSize="@dimen/textsize16"
+                    android:id="@+id/edit_referalCode"
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_marginTop="15dp">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/iv_terms"
+                    android:layout_weight="1"
+                    android:src="@drawable/uncheck"
+                    android:padding="3dp"/>
+                <com.marginfresh.Fonts.LatoRegularTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:text="I agree to all Terms and Conditions"
+                    android:textColor="@color/black"
+                    android:gravity="center|left"/>
+            </LinearLayout>
+            <com.marginfresh.Fonts.LatoBoldTextView
+                android:id="@+id/btn_Register"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/margin8"
+                android:text="@string/register"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize18"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin30"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin15"
+                >
+                <TextView
+                    android:id="@+id/txt_not_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/have_account"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/text_grey"
+                    android:alpha=".8"
+                    android:textSize="@dimen/textsize16" />
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin8"
+                    android:text="@string/login"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textsize16"
+                    android:layout_toRightOf="@+id/txt_already"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

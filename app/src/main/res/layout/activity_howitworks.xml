@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:background="@drawable/how_it_works">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="4dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rv_selectStore">
+                <com.marginfresh.Fonts.LatoBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Select Your Store"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"/>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/next"
+                    android:padding="12dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="5dp"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="13dp"
+            android:weightSum="10">
+
+            <com.marginfresh.Fonts.LatoBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADDRESS" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <com.marginfresh.Fonts.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:textSize="12sp" />
+
+            <com.marginfresh.Fonts.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_address"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tel: 1234567890"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <com.marginfresh.Fonts.LatoRegularTextView
+                android:id="@+id/change_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Address"
+                android:textColor="@color/colorPrimary"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/bg_grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"/>
+            <com.marginfresh.Fonts.LatoRegularTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8.8"
+                android:text="Credit/Debit/ATM Card"
+                android:gravity="center|left"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:src="@drawable/radio_btn_inactive"
+                android:id="@+id/pay_card"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_grey"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"/>
+
+            <com.marginfresh.Fonts.LatoRegularTextView
+                android:id="@+id/latoRegularTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8.8"
+                android:gravity="center|left"
+                android:text="Pay via Wallet" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:src="@drawable/radio_btn_inactive"
+                android:id="@+id/pay_wallet"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_grey"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"/>
+            <com.marginfresh.Fonts.LatoRegularTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8.8"
+                android:text="Cash On Delivery(COD)"
+                android:gravity="center|left"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:src="@drawable/radio_btn_inactive"
+                android:id="@+id/pay_cod"/>
+        </LinearLayout>
+        <com.marginfresh.Fonts.LatoBoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ORDER OVERVIEW"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:background="@color/bg_grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"/>
+            <com.marginfresh.Fonts.LatoRegularTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:text="Subtotal"
+                android:gravity="center|left"/>
+
+            <com.marginfresh.Fonts.LatoRegularTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7"
+                android:text="$70.00"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"/>
+            <com.marginfresh.Fonts.LatoRegularTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:text="Shipping and Handling(Free)"
+                android:gravity="center|left"/>
+
+            <com.marginfresh.Fonts.LatoRegularTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7"
+                android:text="$0.00"
+                android:gravity="center"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"/>
+            <com.marginfresh.Fonts.LatoBoldTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7.8"
+                android:text="Grand Total"
+                android:textSize="18dp"
+                android:gravity="center|left"
+                android:textColor="@color/colorPrimary"/>
+
+            <com.marginfresh.Fonts.LatoBoldTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:text="$70.00"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+            
+        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_grey"
+                    android:orientation="vertical">
+                    
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+                    <com.marginfresh.Fonts.LatoRegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Safe and Secure Payments. Easy returns."
+                        android:gravity="center" />
+                    <com.marginfresh.Fonts.LatoRegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100% Authentic Products."
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+                </LinearLayout>
+    </LinearLayout>
+    
+</ScrollView>

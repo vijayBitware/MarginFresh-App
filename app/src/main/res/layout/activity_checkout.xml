@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:src="@drawable/back"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/iv_back"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6">
+            <com.marginfresh.Fonts.LatoRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Checkout"
+                android:gravity="center|left"
+                android:paddingLeft="7dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:id="@+id/tv_storeName"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:id="@+id/wv_checkout"></WebView>
+</LinearLayout>
